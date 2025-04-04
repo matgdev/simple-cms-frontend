@@ -13,7 +13,7 @@ export function Layout({setViewContent}){
 
     const children = contentList.map((content) => {
         return (
-        <Col key={content.id}>
+        <Col key={content.id} className="my-2">
             <ContentCard  content={content} onClick={() => setViewContent(content.id)} />
         </Col>)
     });

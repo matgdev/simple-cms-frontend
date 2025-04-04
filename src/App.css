@@ -1,0 +1,12 @@
+.clickableCard:hover{
+    cursor: pointer;
+    background-color: var(--bs-tertiary-bg);
+}
+
+.row:has(.col > .clickableCard:hover) > .col:not(:hover){   
+    filter: brightness(0.8);
+}
+
+.col:has(> .clickableCard){
+    transition-duration: 700ms;
+}
