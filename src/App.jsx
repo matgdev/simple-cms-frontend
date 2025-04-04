@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { Layout } from './Layout';
+import { ContentView } from './ContentView';
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <Container>
       <Layout setViewContent={setViewContent} />
-      {viewContent > 0 && <ContentView contentId={viewContent}/>}
+      {viewContent > 0 && <ContentView contentId={viewContent} onHide={() => setViewContent(0)}/>}
     </Container>
       
   );
