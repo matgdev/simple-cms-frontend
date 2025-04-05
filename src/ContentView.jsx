@@ -13,14 +13,14 @@ export function ContentView({contentId, onHide}){
     return (
         <Modal show={true} onHide={onHide} size='lg'>
             <Modal.Header closeButton>
-            <Modal.Title>{content.title}</Modal.Title>
+            <Modal.Title className='ms-3 me-2'>{content.title}</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body className='my-3'>
                 <Container>
                     <Row>
                         <Col><Image src={content.image} className='mw-100'/></Col>
                     </Row>
-                    <Row>
+                    <Row className='mt-4'>
                         <Col>
                             {content.content}
                         </Col>
