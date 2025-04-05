@@ -15,3 +15,7 @@ export function getContentList(limit = 9, offset = 0){
     });
     return view;
 }
+
+export function isValidId(cid) {
+    return data.find((d) => d.id === cid) !== undefined;
+}
