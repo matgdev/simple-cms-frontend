@@ -3,6 +3,7 @@ import { getContentList, getNumberOfPages } from "./dataAccess";
 import { ContentCard } from "./ContentCard";
 import { Container, Row, Col } from "react-bootstrap";
 import { PaginationBar } from "./PaginationBar";
+import { NavigationBar } from "./NavigationBar";
 
 export function Layout({setViewContent}){
     const [page, setPage] = useState(1);
@@ -29,6 +30,9 @@ export function Layout({setViewContent}){
     
     return(
         <Container ref={ref}>
+            <Row>
+                <NavigationBar />
+            </Row>
             <Row xs={1} md={3}>
                 {children}    
             </Row>
