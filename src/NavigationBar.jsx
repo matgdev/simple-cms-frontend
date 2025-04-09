@@ -1,13 +1,14 @@
 import { Nav, Navbar } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export function NavigationBar(){
-    const currentLocation = useLocation();
-    const activeKey = currentLocation.pathname;
+export function NavigationBar({activeKey}){
+
+    if (activeKey.startsWith("/content/")) activeKey = "/";
+
     return (
         <Navbar>
             <Nav variant="pills" activeKey={activeKey} className="flex-column flex-md-row w-100 px-1">
-                <NavItem name={"Home"} path={"/"} />
+                <NavItem name={"Home"} path={"/"}/>
                 <NavItem name={"Create"} path={"/create"} />
                 <NavItem name={"Manage"} path={"/manage"} />
             </Nav>

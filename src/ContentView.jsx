@@ -1,16 +1,14 @@
-import { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { getContentById } from './dataAccess';
 import { Container, Image, Row, Col } from 'react-bootstrap';
-import { ISOToLocaleDateTimeString as dateToString} from "./DateFormatter";
+import { ISOToLocaleDateTimeString as dateToString } from "./DateFormatter";
+import { useLoaderData, useNavigate } from 'react-router-dom';
 
-export function ContentView({contentId, onHide}){
-    const [content, setContent] = useState({title: "", date: Date.now()});
+export function ContentView(){
 
-    useEffect(() => setContent(getContentById(contentId))
-    , [contentId]);
-    
+    const navigate = useNavigate();
+    const {content} = useLoaderData();
+    const onHide = () => navigate(-1);
+
     return (
         <Modal show={true} onHide={onHide} size='lg'>
             <Modal.Header closeButton>
