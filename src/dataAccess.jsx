@@ -1,6 +1,7 @@
 import data from "./mock_data.json"
 
 let sorted = false;
+let nextId = data.length + 1;
 
 export function getContentById(id){
     const view = data.filter(d => d.id === id);
@@ -29,4 +30,59 @@ export function isValidId(cid) {
 
 export function getNumberOfPages(limit){
     return Math.ceil(data.length / limit);
+}
+
+export async function createContent(title, image, content){
+    const thumb = await makeImg(image, 512, 288);
+    const img = await makeImg(image);
+    const date = new Date().toISOString();
+    const newRow = {
+        "id": nextId,
+        "title": title,
+        "content": content,
+        "thumbnail": thumb,
+        "image": img,
+        "date": date,
+        "author": "guest"
+    }
+    console.log(newRow);
+    data.unshift(newRow);
+    nextId+=1;
+}
+
+async function makeImg(imgFile, w = -1, h = -1){
+    
+    return new Promise((resolve, reject) => {
+
+        const reader = new FileReader();
+
+        reader.onload = (e) => {
+            const img = new Image();
+
+            img.onload = async () => {
+
+                if (w === -1 || h === -1){        
+                    w = img.width;
+                    h = img.height;
+                }
+
+                const canvas = new OffscreenCanvas(w, h);
+                canvas.getContext("2d").drawImage(img, 0, 0, w, h);
+
+                const blob = await canvas.convertToBlob();
+                resolve(URL.createObjectURL(blob));
+            }
+
+            img.onerror = (err) => reject(`Could not load image: ${err}`);
+
+            img.src = reader.result;
+        }
+
+        reader.onerror = (err) => reject(`Could not open file:`, err);
+        
+        reader.readAsDataURL(imgFile);
+
+    });
+    
+
 }
