@@ -3,9 +3,8 @@ import { Pagination } from "react-bootstrap";
 
 const halfNumberOfPages = 3; // pages shown = 2 * halfNumberOfPages + 1 + [2*Ellipses + firstPage + lastPage]
 
-export function PaginationBar({onChange, lastPage}){
+export function PaginationBar({onChange, lastPage, currentPage}){
 
-    const [currentPage, setCurrentPage] = useState(1);
     const pages = [];
     const left = currentPage + halfNumberOfPages >= lastPage ? Math.max(lastPage - 2 * halfNumberOfPages - 1, 1) : Math.max(currentPage - halfNumberOfPages, 1);
     const right = Math.min(left + 2 * halfNumberOfPages + (left === 1 ? 1 : 0), lastPage);
@@ -23,7 +22,6 @@ export function PaginationBar({onChange, lastPage}){
     if (right < lastPage) pushPage(lastPage);
 
     function handleClick(number){
-        setCurrentPage(number);
         onChange(number);
     }
 

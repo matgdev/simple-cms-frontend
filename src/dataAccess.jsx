@@ -86,3 +86,8 @@ async function makeImg(imgFile, w = -1, h = -1){
     
 
 }
+
+export async function removeContent(contentId){
+    const index = data.findIndex(d => d.id === contentId);
+    if (index >= 0) data.splice(index, 1);
+}

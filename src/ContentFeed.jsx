@@ -3,23 +3,19 @@ import { getContentList, getNumberOfPages } from "./dataAccess";
 import { ContentCard } from "./ContentCard";
 import { Row, Col } from "react-bootstrap";
 import { PaginationBar } from "./PaginationBar";
-import { Outlet, useNavigate, useOutletContext } from "react-router-dom";
+import { Outlet, useLoaderData, useNavigate, useOutletContext, useSubmit } from "react-router-dom";
+import { ManagementContext } from "./ManagementMode";
 
-export function ContentFeed(){
+export function ContentFeed({managementMode = false}){
     const context = useOutletContext();
     const navigate = useNavigate();
-    const onClick = (id) => navigate(`/content/${id}`);
+    const submit = useSubmit();
+    
     const ref = context.ref;
 
-    
-    const [page, setPage] = useState(1);
-    const [maxPageNumber, setMaxPageNumber] = useState(1);
-    const [contentList, setContentList] = useState([]);
+    const {contentList, maxPageNumber, currentPage, currentUrlParams} = useLoaderData();
 
-    useEffect(() => {
-        setContentList(getContentList(9, page - 1));
-        setMaxPageNumber(getNumberOfPages(9));
-    }, [page]);
+    const onClick = (id) => navigate(`content/${id}?${currentUrlParams}`);
 
     const children = contentList.map((content) => {
         return (
@@ -29,7 +25,7 @@ export function ContentFeed(){
     });
 
     function handlePageChange(n){
-        setPage(n);
+        submit({page: n, limit: 9}, {method:"GET"});
         ref.current?.scrollIntoView({behavior: "smooth"});
     }
 
@@ -37,10 +33,12 @@ export function ContentFeed(){
     <>
         <Outlet />
         <Row xs={1} md={3}>
-            {children}    
+            <ManagementContext value={managementMode}>
+                {children}
+            </ManagementContext>
         </Row>
         <Row className="my-2">
-            <PaginationBar onChange={(n) => handlePageChange(n)} lastPage={maxPageNumber}></PaginationBar>
+            <PaginationBar onChange={(n) => handlePageChange(n)} lastPage={maxPageNumber} currentPage={currentPage}></PaginationBar>
         </Row>
     </>);
 }
