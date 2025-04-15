@@ -15,7 +15,7 @@ export function ContentFeed({managementMode = false}){
 
     const {contentList, maxPageNumber, currentPage, currentUrlParams} = useLoaderData();
 
-    const onClick = (id) => navigate(`content/${id}?${currentUrlParams}`);
+    const onClick = (id) => navigate(`/content/${id}?${currentUrlParams}`);
 
     const children = contentList.map((content) => {
         return (

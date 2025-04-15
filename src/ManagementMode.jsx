@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { ContentFeed } from "./ContentFeed";
 import { Button, Col, Row, Stack } from "react-bootstrap";
-import { useSubmit } from "react-router-dom";
+import { useNavigate, useSubmit } from "react-router-dom";
 
 export function ManagementMode(){
     return <ContentFeed managementMode={true} />;
@@ -9,12 +9,15 @@ export function ManagementMode(){
 
 export function ManagementButtons({contentId}){
     const submit = useSubmit();
+    const navigate = useNavigate();
 
-    function handleEdit(){
-        
+    function handleEdit(event){
+        event.stopPropagation();
+        navigate("/edit/" + contentId);
     }
 
-    function handleDelete(){
+    function handleDelete(event){
+        event.stopPropagation();
         submit({cid: contentId}, {action: "remove", navigate:false, method:"POST"});
     }
 

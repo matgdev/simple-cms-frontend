@@ -8,7 +8,7 @@ import { ManagementContext, ManagementButtons } from "./ManagementMode";
 export function ContentCard({content, onClick}){
     const managementMode = useContext(ManagementContext);
     return (
-        <Card onClick={managementMode ? null : onClick} className="h-100 clickableCard">
+        <Card onClick={onClick} className="h-100 clickableCard">
             <Card.Img variant="top" src={content.thumbnail} />
             <Card.Body>
                 <Card.Title className="text-truncate">{content.title}</Card.Title>
