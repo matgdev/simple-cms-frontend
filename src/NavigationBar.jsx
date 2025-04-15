@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export function NavigationBar({activeKey}){
 
     if (activeKey.startsWith("/content/")) activeKey = "/";
+    if (activeKey.startsWith("/edit/")) activeKey = "/manage";
 
     return (
         <Navbar>
