@@ -1,227 +1,227 @@
 [
-    {
-      "id": 1,
-      "author": "pcowlishaw0",
-      "date": "2024-11-24T21:38:16Z",
-      "title": "The Magic of Morning Routines",
-      "content": "Starting your day with intention can change everything. Whether it's stretching, journaling, sipping tea, or just five minutes of stillness, morning routines give your mind a gentle jumpstart. You don’t need a two-hour ritual—just a moment to center yourself. Over time, that small habit becomes a foundation for calmer, more focused days.",
-      "thumbnail": "/src/assets/thumbnails/1.jpg",
-      "image": "/src/assets/images/1.jpg"
-    },
-    {
-      "id": 2,
-      "author": "tschulke1",
-      "date": "2024-12-07T13:04:08Z",
-      "title": "Wildlife Photography 101",
-      "content": "Capturing animals in their natural habitat takes more than a good camera. It requires patience, timing, and respect for nature. The best wildlife photographers blend into the background, waiting quietly for that perfect shot. Always keep a safe distance, use natural light, and remember—sometimes the story behind the photo matters more than the image itself.",
-      "thumbnail": "/src/assets/thumbnails/2.jpg",
-      "image": "/src/assets/images/2.jpg"
-    },
-    {
-      "id": 3,
-      "author": "gstribbling2",
-      "date": "2025-02-04T10:05:44Z",
-      "title": "How to Declutter Without Losing Your Mind",
-      "content": "Decluttering doesn’t have to mean getting rid of everything you love. Start small—a drawer, a shelf, a single corner. Ask yourself: Do I use it? Does it make me happy? If not, let it go. You'll be amazed at how freeing it feels to make space—not just physically, but mentally too.",
-      "thumbnail": "/src/assets/thumbnails/3.jpg",
-      "image": "/src/assets/images/3.jpg"
-    },
-    {
-      "id": 4,
-      "author": "aspurrett3",
-      "date": "2024-05-01T17:04:29Z",
-      "title": "Introverts in a Loud World",
-      "content": "Being an introvert doesn’t mean being shy—it means you recharge by being alone. In a world that rewards constant socializing and visibility, introverts thrive in reflection, depth, and quiet strength. Whether through writing, art, or one-on-one conversations, their voice still matters—just in a different, beautiful way.",
-      "thumbnail": "/src/assets/thumbnails/4.jpg",
-      "image": "/src/assets/images/4.jpg"
-    },
-    {
-      "id": 5,
-      "author": "sklima4",
-      "date": "2024-12-09T06:19:08Z",
-      "title": "Why Hiking is the Ultimate Reset",
-      "content": "There’s something primal about hitting a trail, far from screens and schedules. Hiking reminds us that life isn’t always linear—it’s rocky, winding, and full of surprises. Whether it's a short nature loop or a mountain summit, each step brings you closer to clarity, peace, and your own rhythm.",
-      "thumbnail": "/src/assets/thumbnails/5.jpg",
-      "image": "/src/assets/images/5.jpg"
-    },
-    {
-      "id": 6,
-      "author": "kmullett5",
-      "date": "2024-06-14T13:25:31Z",
-      "title": "The Rise of Eco-Friendly Packaging",
-      "content": "From compostable mailers to edible cutlery, the packaging industry is going green. Consumers are demanding less waste and more accountability, and brands are listening. It’s not just about looking good anymore—it’s about doing good for the planet too.",
-      "thumbnail": "/src/assets/thumbnails/6.jpg",
-      "image": "/src/assets/images/6.jpg"
-    },
-    {
-      "id": 7,
-      "author": "jbasten6",
-      "date": "2025-01-09T03:18:20Z",
-      "title": "What Makes a Good Leader Today?",
-      "content": "Gone are the days of barking orders. Modern leadership is about empathy, transparency, and listening more than talking. A great leader creates a space where people feel safe to speak up, fail, and grow. The best part? Anyone can lead—title or not.",
-      "thumbnail": "/src/assets/thumbnails/7.jpg",
-      "image": "/src/assets/images/7.jpg"
-    },
-    {
-      "id": 8,
-      "author": "dselcraig7",
-      "date": "2024-04-17T17:59:00Z",
-      "title": "Is Minimalism Still Relevant?",
-      "content": "Minimalism isn’t just white walls and empty rooms—it’s about choosing what truly matters. As trends evolve, the heart of minimalism remains: less stuff, more meaning. In a world overwhelmed by options, simplicity is a quiet rebellion.",
-      "thumbnail": "/src/assets/thumbnails/8.jpg",
-      "image": "/src/assets/images/8.jpg"
-    },
-    {
-      "id": 9,
-      "author": "nley8",
-      "date": "2024-09-11T18:19:22Z",
-      "title": "How Podcasts Became the New Books",
-      "content": "Podcasts let you learn, laugh, and get inspired—hands-free. Whether you're into true crime, history, wellness, or weird trivia, there’s a show for you. They’ve turned daily commutes and laundry days into unexpected moments of insight and connection.",
-      "thumbnail": "/src/assets/thumbnails/9.jpg",
-      "image": "/src/assets/images/9.jpg"
-    },
-    {
-      "id": 10,
-      "author": "bbircher9",
-      "date": "2024-09-08T15:49:12Z",
-      "title": "The Joy of Cooking for One",
-      "content": "Cooking for yourself isn’t lonely—it’s liberating. No pressure, no judgment, just a chance to make exactly what you love. Try new flavors, eat breakfast for dinner, or finally use that spice you bought in 2021. It’s not about perfection—it’s about care.",
-      "thumbnail": "/src/assets/thumbnails/10.jpg",
-      "image": "/src/assets/images/10.jpg"
-    },
-    {
-      "id": 11,
-      "author": "kconstantinea",
-      "date": "2024-08-25T15:23:57Z",
-      "title": "Why Dogs Are Emotional Geniuses",
-      "content": "Dogs don’t just read emotions—they feel them. Studies show dogs can sense human moods and even mirror our stress levels. That head tilt or paw on your knee? It’s not random. They’re trying to say, 'I’m here. I get it.' And somehow, they always do.",
-      "thumbnail": "/src/assets/thumbnails/11.jpg",
-      "image": "/src/assets/images/11.jpg"
-    },
-    {
-      "id": 12,
-      "author": "wcuolahanb",
-      "date": "2024-09-11T00:39:34Z",
-      "title": "The Mental Health Benefits of Journaling",
-      "content": "Journaling isn’t just for writers—it’s for anyone who wants to make sense of life. Whether you’re venting, planning, or reflecting, putting pen to paper clears mental clutter. It’s like a brain dump that leaves your soul lighter.",
-      "thumbnail": "/src/assets/thumbnails/12.jpg",
-      "image": "/src/assets/images/12.jpg"
-    },
-    {
-      "id": 13,
-      "author": "tclemitsc",
-      "date": "2025-01-24T20:21:55Z",
-      "title": "How Music Impacts Productivity",
-      "content": "The right playlist can fuel focus like nothing else. Lo-fi beats, ambient jazz, or even movie soundtracks create a mental zone. Just be sure to match the vibe to the task. Need energy? Try fast tempos. Need calm? Go instrumental. Your ears can lead your mind.",
-      "thumbnail": "/src/assets/thumbnails/13.jpg",
-      "image": "/src/assets/images/13.jpg"
-    },
-    {
-      "id": 14,
-      "author": "vparkinsond",
-      "date": "2024-10-27T18:12:32Z",
-      "title": "The Allure of Tiny Homes",
-      "content": "Living small doesn’t mean giving up—it means choosing differently. Tiny homes offer less maintenance, lower costs, and surprisingly cozy vibes. Every inch is intentional. And for many, that trade-off brings a bigger sense of freedom.",
-      "thumbnail": "/src/assets/thumbnails/14.jpg",
-      "image": "/src/assets/images/14.jpg"
-    },
-    {
-      "id": 15,
-      "author": "ggajewskie",
-      "date": "2024-12-05T05:14:06Z",
-      "title": "How Nature Boosts Creativity",
-      "content": "Stuck on a problem? Go outside. Studies show that time in nature improves creative thinking, focus, and mood. A simple walk under trees or a sit by the water can reset your brain and open mental doors. Nature’s not just healing—it’s inspiring.",
-      "thumbnail": "/src/assets/thumbnails/15.jpg",
-      "image": "/src/assets/images/15.jpg"
-    },
-    {
-      "id": 16,
-      "author": "fschuhf",
-      "date": "2024-10-03T03:24:00Z",
-      "title": "The Comeback of Handwritten Letters",
-      "content": "In an age of instant messages, a handwritten note is a powerful act of love. Slower, more thoughtful, and deeply personal—it carries the weight of time and intention. Whether it’s a birthday card or a ‘just because,’ it means more than emojis ever could.",
-      "thumbnail": "/src/assets/thumbnails/16.jpg",
-      "image": "/src/assets/images/16.jpg"
-    },
-    {
-      "id": 17,
-      "author": "pmarcqg",
-      "date": "2024-05-17T02:15:40Z",
-      "title": "How to Build a Capsule Wardrobe",
-      "content": "Capsule wardrobes aren’t about restriction—they’re about clarity. Choose versatile, high-quality basics that mix well. Stick to a cohesive color palette. You’ll save time, reduce clutter, and never feel like you have ‘nothing to wear’ again.",
-      "thumbnail": "/src/assets/thumbnails/17.jpg",
-      "image": "/src/assets/images/17.jpg"
-    },
-    {
-      "id": 18,
-      "author": "cgwilliamh",
-      "date": "2025-03-04T15:48:27Z",
-      "title": "Virtual Reality: Beyond Gaming",
-      "content": "VR isn’t just for gamers anymore. It’s transforming education, therapy, and remote collaboration. From simulating surgeries to treating phobias, virtual reality is opening doors that once only existed in science fiction. The future is immersive.",
-      "thumbnail": "/src/assets/thumbnails/18.jpg",
-      "image": "/src/assets/images/18.jpg"
-    },
-    {
-      "id": 19,
-      "author": "gwileyi",
-      "date": "2024-08-30T20:19:13Z",
-      "title": "The Magic of Saying No",
-      "content": "Saying no isn’t selfish—it’s necessary. Every 'yes' costs time, energy, and attention. Learning to say no with kindness protects your peace and honors your boundaries. It’s not rejection—it’s self-respect.",
-      "thumbnail": "/src/assets/thumbnails/19.jpg",
-      "image": "/src/assets/images/19.jpg"
-    },
-    {
-      "id": 20,
-      "author": "pmaccrachenj",
-      "date": "2025-03-28T03:10:46Z",
-      "title": "The Smiling Lie",
-      "content": "Pre-War Advertisement (circa 2062):\n This cheerful billboard was commissioned by the Federal Recreation Bureau, a short-lived government initiative designed to promote wholesome family activities during the rise of Cold War tensions. The board game, simply titled “Family Board Game”, while appearing innocent, had a sinister undercurrent: it was actually a subtle psychological conditioning tool, used in select communities as part of sociological experiments.\nThe board game's bright colors and simplistic mechanics hid subliminal instructions and choices designed to mimic decision-making under pressure, with “moral ambiguity” baked into gameplay. Players would face fictional crises—\"Give up your food to save a neighbor\" or \"Turn in your friend to maintain order\"—used to study how people might behave under post-apocalyptic conditions.",
-      "thumbnail": "/src/assets/thumbnails/20.png",
-      "image": "/src/assets/images/20.png"
-    },
-    {
-      "id": 21,
-      "author": "hrexk",
-      "date": "2024-05-26T20:33:10Z",
-      "title": "The Value of Digital Detoxes",
-      "content": "Constant notifications can drain your attention. A digital detox doesn’t have to be extreme—try one screen-free evening a week. Go outside, read, cook, or just be bored on purpose. Your brain will thank you for the break.",
-      "thumbnail": "/src/assets/thumbnails/21.jpg",
-      "image": "/src/assets/images/21.jpg"
-    },
-    {
-      "id": 22,
-      "author": "ctalbyl",
-      "date": "2025-02-10T06:15:41Z",
-      "title": "Why We Love Nostalgia",
-      "content": "Old songs, retro games, childhood snacks—they all tap into memory’s sweet spot. Nostalgia gives us comfort, reminding us of simpler times. It’s more than sentimentality—it’s a way to feel grounded in the now through echoes of the past.",
-      "thumbnail": "/src/assets/thumbnails/22.jpg",
-      "image": "/src/assets/images/22.jpg"
-    },
-    {
-      "id": 23,
-      "author": "adudlestonem",
-      "date": "2025-01-09T01:15:54Z",
-      "title": "How to Create a Reading Habit",
-      "content": "Don’t wait for free time—make it. Keep a book by your bed, on your phone, in your bag. Read during breaks, before bed, or while waiting in line. Even ten minutes a day adds up. You’ll be amazed how fast a chapter becomes a library.",
-      "thumbnail": "/src/assets/thumbnails/23.jpg",
-      "image": "/src/assets/images/23.jpg"
-    },
-    {
-      "id": 24,
-      "author": "sscothornn",
-      "date": "2024-08-04T20:00:58Z",
-      "title": "The Hidden Benefits of Boredom",
-      "content": "In boredom, the brain wanders—and that’s a good thing. When we’re not bombarded by input, we make creative connections, reflect, and recharge. Instead of filling every silence, let your mind meander. Who knows where it might go?",
-      "thumbnail": "/src/assets/thumbnails/24.jpg",
-      "image": "/src/assets/images/24.jpg"
-    },
-    {
-      "id": 25,
-      "author": "cgrottyo",
-      "date": "2024-08-11T15:17:59Z",
-      "title": "Intro to Mindful Eating",
-      "content": "Ever eat a meal and barely taste it? Mindful eating changes that. Slow down, chew, savor. Notice textures, flavors, even how your body responds. You’ll feel more satisfied, and less likely to overeat. It’s like meditation—but delicious.",
-      "thumbnail": "/src/assets/thumbnails/25.jpg",
-      "image": "/src/assets/images/25.jpg"
-    }
-  ]
+  {
+    "id": 1,
+    "author": "pcowlishaw0",
+    "date": "2024-11-24T21:38:16Z",
+    "title": "The Magic of Morning Routines",
+    "content": "Starting your day with intention can change everything. Whether it's stretching, journaling, sipping tea, or just five minutes of stillness, morning routines give your mind a gentle jumpstart. You don’t need a two-hour ritual—just a moment to center yourself. Over time, that small habit becomes a foundation for calmer, more focused days.",
+    "thumbnail": "/src/assets/thumbnails/1.jpg",
+    "image": "/src/assets/images/1.jpg"
+  },
+  {
+    "id": 2,
+    "author": "tschulke1",
+    "date": "2024-12-07T13:04:08Z",
+    "title": "Wildlife Photography 101",
+    "content": "Capturing animals in their natural habitat takes more than a good camera. It requires patience, timing, and respect for nature. The best wildlife photographers blend into the background, waiting quietly for that perfect shot. Always keep a safe distance, use natural light, and remember—sometimes the story behind the photo matters more than the image itself.",
+    "thumbnail": "/src/assets/thumbnails/2.jpg",
+    "image": "/src/assets/images/2.jpg"
+  },
+  {
+    "id": 3,
+    "author": "gstribbling2",
+    "date": "2025-02-04T10:05:44Z",
+    "title": "How to Declutter Without Losing Your Mind",
+    "content": "Decluttering doesn’t have to mean getting rid of everything you love. Start small—a drawer, a shelf, a single corner. Ask yourself: Do I use it? Does it make me happy? If not, let it go. You'll be amazed at how freeing it feels to make space—not just physically, but mentally too.",
+    "thumbnail": "/src/assets/thumbnails/3.jpg",
+    "image": "/src/assets/images/3.jpg"
+  },
+  {
+    "id": 4,
+    "author": "aspurrett3",
+    "date": "2024-05-01T17:04:29Z",
+    "title": "Introverts in a Loud World",
+    "content": "Being an introvert doesn’t mean being shy—it means you recharge by being alone. In a world that rewards constant socializing and visibility, introverts thrive in reflection, depth, and quiet strength. Whether through writing, art, or one-on-one conversations, their voice still matters—just in a different, beautiful way.",
+    "thumbnail": "/src/assets/thumbnails/4.jpg",
+    "image": "/src/assets/images/4.jpg"
+  },
+  {
+    "id": 5,
+    "author": "sklima4",
+    "date": "2024-12-09T06:19:08Z",
+    "title": "Why Hiking is the Ultimate Reset",
+    "content": "There’s something primal about hitting a trail, far from screens and schedules. Hiking reminds us that life isn’t always linear—it’s rocky, winding, and full of surprises. Whether it's a short nature loop or a mountain summit, each step brings you closer to clarity, peace, and your own rhythm.",
+    "thumbnail": "/src/assets/thumbnails/5.jpg",
+    "image": "/src/assets/images/5.jpg"
+  },
+  {
+    "id": 6,
+    "author": "kmullett5",
+    "date": "2024-06-14T13:25:31Z",
+    "title": "The Rise of Eco-Friendly Packaging",
+    "content": "From compostable mailers to edible cutlery, the packaging industry is going green. Consumers are demanding less waste and more accountability, and brands are listening. It’s not just about looking good anymore—it’s about doing good for the planet too.",
+    "thumbnail": "/src/assets/thumbnails/6.jpg",
+    "image": "/src/assets/images/6.jpg"
+  },
+  {
+    "id": 7,
+    "author": "jbasten6",
+    "date": "2025-01-09T03:18:20Z",
+    "title": "What Makes a Good Leader Today?",
+    "content": "Gone are the days of barking orders. Modern leadership is about empathy, transparency, and listening more than talking. A great leader creates a space where people feel safe to speak up, fail, and grow. The best part? Anyone can lead—title or not.",
+    "thumbnail": "/src/assets/thumbnails/7.jpg",
+    "image": "/src/assets/images/7.jpg"
+  },
+  {
+    "id": 8,
+    "author": "dselcraig7",
+    "date": "2024-04-17T17:59:00Z",
+    "title": "Is Minimalism Still Relevant?",
+    "content": "Minimalism isn’t just white walls and empty rooms—it’s about choosing what truly matters. As trends evolve, the heart of minimalism remains: less stuff, more meaning. In a world overwhelmed by options, simplicity is a quiet rebellion.",
+    "thumbnail": "/src/assets/thumbnails/8.jpg",
+    "image": "/src/assets/images/8.jpg"
+  },
+  {
+    "id": 9,
+    "author": "nley8",
+    "date": "2024-09-11T18:19:22Z",
+    "title": "How Podcasts Became the New Books",
+    "content": "Podcasts let you learn, laugh, and get inspired—hands-free. Whether you're into true crime, history, wellness, or weird trivia, there’s a show for you. They’ve turned daily commutes and laundry days into unexpected moments of insight and connection.",
+    "thumbnail": "/src/assets/thumbnails/9.jpg",
+    "image": "/src/assets/images/9.jpg"
+  },
+  {
+    "id": 10,
+    "author": "bbircher9",
+    "date": "2024-09-08T15:49:12Z",
+    "title": "The Joy of Cooking for One",
+    "content": "Cooking for yourself isn’t lonely—it’s liberating. No pressure, no judgment, just a chance to make exactly what you love. Try new flavors, eat breakfast for dinner, or finally use that spice you bought in 2021. It’s not about perfection—it’s about care.",
+    "thumbnail": "/src/assets/thumbnails/10.jpg",
+    "image": "/src/assets/images/10.jpg"
+  },
+  {
+    "id": 11,
+    "author": "kconstantinea",
+    "date": "2024-08-25T15:23:57Z",
+    "title": "Why Dogs Are Emotional Geniuses",
+    "content": "Dogs don’t just read emotions—they feel them. Studies show dogs can sense human moods and even mirror our stress levels. That head tilt or paw on your knee? It’s not random. They’re trying to say, 'I’m here. I get it.' And somehow, they always do.",
+    "thumbnail": "/src/assets/thumbnails/11.jpg",
+    "image": "/src/assets/images/11.jpg"
+  },
+  {
+    "id": 12,
+    "author": "wcuolahanb",
+    "date": "2024-09-11T00:39:34Z",
+    "title": "The Mental Health Benefits of Journaling",
+    "content": "Journaling isn’t just for writers—it’s for anyone who wants to make sense of life. Whether you’re venting, planning, or reflecting, putting pen to paper clears mental clutter. It’s like a brain dump that leaves your soul lighter.",
+    "thumbnail": "/src/assets/thumbnails/12.jpg",
+    "image": "/src/assets/images/12.jpg"
+  },
+  {
+    "id": 13,
+    "author": "tclemitsc",
+    "date": "2025-01-24T20:21:55Z",
+    "title": "How Music Impacts Productivity",
+    "content": "The right playlist can fuel focus like nothing else. Lo-fi beats, ambient jazz, or even movie soundtracks create a mental zone. Just be sure to match the vibe to the task. Need energy? Try fast tempos. Need calm? Go instrumental. Your ears can lead your mind.",
+    "thumbnail": "/src/assets/thumbnails/13.jpg",
+    "image": "/src/assets/images/13.jpg"
+  },
+  {
+    "id": 14,
+    "author": "vparkinsond",
+    "date": "2024-10-27T18:12:32Z",
+    "title": "The Allure of Tiny Homes",
+    "content": "Living small doesn’t mean giving up—it means choosing differently. Tiny homes offer less maintenance, lower costs, and surprisingly cozy vibes. Every inch is intentional. And for many, that trade-off brings a bigger sense of freedom.",
+    "thumbnail": "/src/assets/thumbnails/14.jpg",
+    "image": "/src/assets/images/14.jpg"
+  },
+  {
+    "id": 15,
+    "author": "ggajewskie",
+    "date": "2024-12-05T05:14:06Z",
+    "title": "How Nature Boosts Creativity",
+    "content": "Stuck on a problem? Go outside. Studies show that time in nature improves creative thinking, focus, and mood. A simple walk under trees or a sit by the water can reset your brain and open mental doors. Nature’s not just healing—it’s inspiring.",
+    "thumbnail": "/src/assets/thumbnails/15.jpg",
+    "image": "/src/assets/images/15.jpg"
+  },
+  {
+    "id": 16,
+    "author": "fschuhf",
+    "date": "2024-10-03T03:24:00Z",
+    "title": "The Comeback of Handwritten Letters",
+    "content": "In an age of instant messages, a handwritten note is a powerful act of love. Slower, more thoughtful, and deeply personal—it carries the weight of time and intention. Whether it’s a birthday card or a ‘just because,’ it means more than emojis ever could.",
+    "thumbnail": "/src/assets/thumbnails/16.jpg",
+    "image": "/src/assets/images/16.jpg"
+  },
+  {
+    "id": 17,
+    "author": "pmarcqg",
+    "date": "2024-05-17T02:15:40Z",
+    "title": "How to Build a Capsule Wardrobe",
+    "content": "Capsule wardrobes aren’t about restriction—they’re about clarity. Choose versatile, high-quality basics that mix well. Stick to a cohesive color palette. You’ll save time, reduce clutter, and never feel like you have ‘nothing to wear’ again.",
+    "thumbnail": "/src/assets/thumbnails/17.jpg",
+    "image": "/src/assets/images/17.jpg"
+  },
+  {
+    "id": 18,
+    "author": "cgwilliamh",
+    "date": "2025-03-04T15:48:27Z",
+    "title": "Virtual Reality: Beyond Gaming",
+    "content": "VR isn’t just for gamers anymore. It’s transforming education, therapy, and remote collaboration. From simulating surgeries to treating phobias, virtual reality is opening doors that once only existed in science fiction. The future is immersive.",
+    "thumbnail": "/src/assets/thumbnails/18.jpg",
+    "image": "/src/assets/images/18.jpg"
+  },
+  {
+    "id": 19,
+    "author": "gwileyi",
+    "date": "2024-08-30T20:19:13Z",
+    "title": "The Magic of Saying No",
+    "content": "Saying no isn’t selfish—it’s necessary. Every 'yes' costs time, energy, and attention. Learning to say no with kindness protects your peace and honors your boundaries. It’s not rejection—it’s self-respect.",
+    "thumbnail": "/src/assets/thumbnails/19.jpg",
+    "image": "/src/assets/images/19.jpg"
+  },
+  {
+    "id": 20,
+    "author": "pmaccrachenj",
+    "date": "2025-03-28T03:10:46Z",
+    "title": "The Smiling Lie",
+    "content": "Pre-War Advertisement (circa 2062):\n This cheerful billboard was commissioned by the Federal Recreation Bureau, a short-lived government initiative designed to promote wholesome family activities during the rise of Cold War tensions. The board game, simply titled “Family Board Game”, while appearing innocent, had a sinister undercurrent: it was actually a subtle psychological conditioning tool, used in select communities as part of sociological experiments.\nThe board game's bright colors and simplistic mechanics hid subliminal instructions and choices designed to mimic decision-making under pressure, with “moral ambiguity” baked into gameplay. Players would face fictional crises—\"Give up your food to save a neighbor\" or \"Turn in your friend to maintain order\"—used to study how people might behave under post-apocalyptic conditions.",
+    "thumbnail": "/src/assets/thumbnails/20.png",
+    "image": "/src/assets/images/20.png"
+  },
+  {
+    "id": 21,
+    "author": "hrexk",
+    "date": "2024-05-26T20:33:10Z",
+    "title": "The Value of Digital Detoxes",
+    "content": "Constant notifications can drain your attention. A digital detox doesn’t have to be extreme—try one screen-free evening a week. Go outside, read, cook, or just be bored on purpose. Your brain will thank you for the break.",
+    "thumbnail": "/src/assets/thumbnails/21.jpg",
+    "image": "/src/assets/images/21.jpg"
+  },
+  {
+    "id": 22,
+    "author": "ctalbyl",
+    "date": "2025-02-10T06:15:41Z",
+    "title": "Why We Love Nostalgia",
+    "content": "Old songs, retro games, childhood snacks—they all tap into memory’s sweet spot. Nostalgia gives us comfort, reminding us of simpler times. It’s more than sentimentality—it’s a way to feel grounded in the now through echoes of the past.",
+    "thumbnail": "/src/assets/thumbnails/22.jpg",
+    "image": "/src/assets/images/22.jpg"
+  },
+  {
+    "id": 23,
+    "author": "adudlestonem",
+    "date": "2025-01-09T01:15:54Z",
+    "title": "How to Create a Reading Habit",
+    "content": "Don’t wait for free time—make it. Keep a book by your bed, on your phone, in your bag. Read during breaks, before bed, or while waiting in line. Even ten minutes a day adds up. You’ll be amazed how fast a chapter becomes a library.",
+    "thumbnail": "/src/assets/thumbnails/23.jpg",
+    "image": "/src/assets/images/23.jpg"
+  },
+  {
+    "id": 24,
+    "author": "sscothornn",
+    "date": "2024-08-04T20:00:58Z",
+    "title": "The Hidden Benefits of Boredom",
+    "content": "In boredom, the brain wanders—and that’s a good thing. When we’re not bombarded by input, we make creative connections, reflect, and recharge. Instead of filling every silence, let your mind meander. Who knows where it might go?",
+    "thumbnail": "/src/assets/thumbnails/24.jpg",
+    "image": "/src/assets/images/24.jpg"
+  },
+  {
+    "id": 25,
+    "author": "cgrottyo",
+    "date": "2024-08-11T15:17:59Z",
+    "title": "Intro to Mindful Eating",
+    "content": "Ever eat a meal and barely taste it? Mindful eating changes that. Slow down, chew, savor. Notice textures, flavors, even how your body responds. You’ll feel more satisfied, and less likely to overeat. It’s like meditation—but delicious.",
+    "thumbnail": "/src/assets/thumbnails/25.jpg",
+    "image": "/src/assets/images/25.jpg"
+  }
+]

@@ -8,6 +8,6 @@ const formatter = Intl.DateTimeFormat(userLocale, {
     minute: '2-digit',
 });
 
-export function ISOToLocaleDateTimeString(date){
+export function ISOToLocaleDateTimeString(date) {
     return formatter.format(new Date(date));
 }

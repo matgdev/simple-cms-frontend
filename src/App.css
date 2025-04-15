@@ -1,42 +1,42 @@
-.clickableCard:hover{
+.clickableCard:hover {
     cursor: pointer;
     background-color: var(--bs-tertiary-bg);
 }
 
-.row:has(.col > .clickableCard:hover) > .col:not(:hover){   
+.row:has(.col > .clickableCard:hover)>.col:not(:hover) {
     filter: brightness(0.8);
 }
 
-.col:has(> .clickableCard){
+.col:has(> .clickableCard) {
     transition-duration: 700ms;
 }
 
 
-.description-box{
+.description-box {
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.card.bg-tertiary{
+.card.bg-tertiary {
     background-color: var(--bs-dark-bg-subtle);
 }
 
 .navLinkButton:hover,
-a.nav-link:not(:has(> .active)):hover{
+a.nav-link:not(:has(> .active)):hover {
     background-color: var(--bs-tertiary-bg);
 }
 
-.navLinkButton.active{
+.navLinkButton.active {
     padding: calc(var(--bs-nav-link-padding-y) * 2) calc(var(--bs-navbar-nav-link-padding-x) * 2) !important;
     color: var(--bs-nav-pills-link-active-color) !important;
 }
 
-a.nav-link:has( .active){
+a.nav-link:has(.active) {
     padding: 0 !important;
 }
 
-.navLinkButton{
+.navLinkButton {
     letter-spacing: 2px;
 }

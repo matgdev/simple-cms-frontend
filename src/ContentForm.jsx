@@ -1,14 +1,14 @@
-import {Button, Form, Row } from "react-bootstrap";
+import { Button, Form, Row } from "react-bootstrap";
 
-export function ContentForm({onSubmit, onChange, formValues, isEditing = false}){
-    return(
+export function ContentForm({ onSubmit, onChange, formValues, isEditing = false }) {
+    return (
         <Row className="p-2">
             <Form action={onSubmit}>
                 <Form.Group controlId="title" className="mb-3">
                     <Form.Label>Title</Form.Label>
-                    <Form.Control type="text" placeholder="Enter title" required onChange={onChange} value={formValues.title}/>
+                    <Form.Control type="text" placeholder="Enter title" required onChange={onChange} value={formValues.title} />
                 </Form.Group>
-                
+
                 <Form.Group controlId="image" className="mb-3">
                     <Form.Label>Image</Form.Label>
                     <Form.Control type="file" required={!isEditing} accept="image/*" onChange={onChange} />
@@ -17,7 +17,7 @@ export function ContentForm({onSubmit, onChange, formValues, isEditing = false})
 
                 <Form.Group controlId="content" className="mb-3">
                     <Form.Label>Content</Form.Label>
-                    <Form.Control as="textarea" rows={7} required onChange={onChange} value={formValues.content}/>
+                    <Form.Control as="textarea" rows={7} required onChange={onChange} value={formValues.content} />
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
@@ -25,6 +25,6 @@ export function ContentForm({onSubmit, onChange, formValues, isEditing = false})
                 </Button>
             </Form>
         </Row>
-        
+
     )
 }

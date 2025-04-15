@@ -5,7 +5,7 @@ let nextId = data.length + 1;
 const updateHistory = [];
 let nextUpdateId = 1;
 
-export function getContentById(id){
+export function getContentById(id) {
     console.log("searching content with id " + id);
     const view = data.filter(d => d.id === id);
     if (view.length === 1) return view[0];
@@ -13,17 +13,17 @@ export function getContentById(id){
     return null;
 }
 
-export function getContentList(limit = 9, offset = 0){
-    if (!sorted){
+export function getContentList(limit = 9, offset = 0) {
+    if (!sorted) {
         data.sort((a, b) => a.date > b.date ? -1 : a.date === b.date ? 0 : 1);
         sorted = true;
     }
-    
+
     const start = offset * limit;
     const view = data.slice(start, start + limit).map((item) => {
-        const {id, title, thumbnail, content, date, author} = item;
+        const { id, title, thumbnail, content, date, author } = item;
         const short_content = content.slice(0, 255);
-        return {id, title, thumbnail, content: short_content, date, author}
+        return { id, title, thumbnail, content: short_content, date, author }
     });
     return view;
 }
@@ -32,11 +32,11 @@ export function isValidId(cid) {
     return data.find((d) => d.id === cid) !== undefined;
 }
 
-export function getNumberOfPages(limit){
+export function getNumberOfPages(limit) {
     return Math.ceil(data.length / limit);
 }
 
-export async function createContent(title, image, content, id=-1){
+export async function createContent(title, image, content, id = -1) {
     const thumb = await makeImg(image, 512, 350);
     const img = await makeImg(image);
     const date = new Date().toISOString();
@@ -51,10 +51,10 @@ export async function createContent(title, image, content, id=-1){
     }
     console.log(newRow);
 
-    if (newRow.id === nextId){
+    if (newRow.id === nextId) {
         data.unshift(newRow);
-        nextId+=1;
-    }else{
+        nextId += 1;
+    } else {
         const index = data.findIndex(d => Number(d.id) === Number(id));
         if (index >= 0) {
             const oldRow = data.splice(index, 1);
@@ -68,11 +68,11 @@ export async function createContent(title, image, content, id=-1){
             console.log("updated content " + id);
         }
     }
-    
+
 }
 
-async function makeImg(imgFile, w = -1, h = -1){
-    
+async function makeImg(imgFile, w = -1, h = -1) {
+
     return new Promise((resolve, reject) => {
 
         const reader = new FileReader();
@@ -82,7 +82,7 @@ async function makeImg(imgFile, w = -1, h = -1){
 
             img.onload = async () => {
 
-                if (w === -1 || h === -1){        
+                if (w === -1 || h === -1) {
                     w = img.width;
                     h = img.height;
                 }
@@ -100,15 +100,15 @@ async function makeImg(imgFile, w = -1, h = -1){
         }
 
         reader.onerror = (err) => reject(`Could not open file:`, err);
-        
+
         reader.readAsDataURL(imgFile);
 
     });
-    
+
 
 }
 
-export async function removeContent(contentId){
+export async function removeContent(contentId) {
     const index = data.findIndex(d => d.id === contentId);
     if (index >= 0) {
         const oldRow = data.splice(index, 1);
@@ -123,8 +123,8 @@ export async function removeContent(contentId){
     }
 }
 
-export async function editContent(title, image, content, id){
-    if (!(image instanceof File)){
+export async function editContent(title, image, content, id) {
+    if (!(image instanceof File)) {
         const resp = await fetch(image);
         const blob = await resp.blob();
         const mimeType = blob.type || 'image/jpeg';

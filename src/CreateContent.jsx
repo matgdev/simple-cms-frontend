@@ -1,16 +1,15 @@
 import { useState } from "react";
-import {Button, Form, Row } from "react-bootstrap";
-import { useFetcher, useSubmit } from "react-router-dom";
+import { useSubmit } from "react-router-dom";
 import { ContentForm } from "./ContentForm";
 
-export function CreateContent(){
+export function CreateContent() {
 
-    const [formData, setFormData] = useState({title: "", image: null, content: ""});
+    const [formData, setFormData] = useState({ title: "", image: null, content: "" });
 
-    function handleChange(e){
+    function handleChange(e) {
         setFormData((d) => {
-            const newData = {...d};
-            if (e.target.id === "image"){
+            const newData = { ...d };
+            if (e.target.id === "image") {
                 const file = e.target.files[0];
                 newData[e.target.id] = file ? file : null;
             }
@@ -24,12 +23,12 @@ export function CreateContent(){
     function handleSubmit(e) {
         const fd = new FormData();
         for (let key of Object.keys(formData)) fd.append(key, formData[key]);
-        submit(fd, {action: "submit",  method: "POST", encType: "multipart/form-data"});
+        submit(fd, { action: "submit", method: "POST", encType: "multipart/form-data" });
     }
 
 
-    return(
-        <ContentForm onChange={handleChange} onSubmit={handleSubmit} formValues={formData}/>
-        
+    return (
+        <ContentForm onChange={handleChange} onSubmit={handleSubmit} formValues={formData} />
+
     )
 }

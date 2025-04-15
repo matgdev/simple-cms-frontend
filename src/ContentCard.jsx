@@ -1,12 +1,12 @@
-import { Card, Col, Container, Row, Stack } from "react-bootstrap";
-import { ISOToLocaleDateTimeString as dateToString} from "./DateFormatter";
+import { Card, Container, Row } from "react-bootstrap";
+import { ISOToLocaleDateTimeString as dateToString } from "./DateFormatter";
 import { useContext } from "react";
 import { ManagementContext, ManagementButtons } from "./ManagementMode";
 import { formatContentBreaks } from "./formatContent";
 
 
 
-export function ContentCard({content, onClick}){
+export function ContentCard({ content, onClick }) {
     const managementMode = useContext(ManagementContext);
     const description = formatContentBreaks(content.content);
     return (
@@ -20,7 +20,7 @@ export function ContentCard({content, onClick}){
                 <Container>
                     <Row className="p-0"><Card.Text className="m-0 p-0">By @{content.author}</Card.Text></Row>
                     <Row className="p-0"><Card.Text className="m-0 p-0">{dateToString(content.date)}</Card.Text></Row>
-                    {managementMode && <ManagementButtons contentId={content.id}/>}
+                    {managementMode && <ManagementButtons contentId={content.id} />}
                 </Container>
             </Card.Footer>
         </Card>
