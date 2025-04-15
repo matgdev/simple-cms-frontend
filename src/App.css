@@ -10,3 +10,11 @@
 .col:has(> .clickableCard){
     transition-duration: 700ms;
 }
+
+
+.description-box{
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

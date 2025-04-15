@@ -12,7 +12,7 @@ export function ContentCard({content, onClick}){
             <Card.Img variant="top" src={content.thumbnail} />
             <Card.Body>
                 <Card.Title className="text-truncate">{content.title}</Card.Title>
-                <Card.Text>{content.content}</Card.Text>
+                <Card.Text className="description-box">{content.content}</Card.Text>
             </Card.Body>
             <Card.Footer>
                 <Container>

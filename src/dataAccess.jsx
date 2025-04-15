@@ -22,7 +22,7 @@ export function getContentList(limit = 9, offset = 0){
     const start = offset * limit;
     const view = data.slice(start, start + limit).map((item) => {
         const {id, title, thumbnail, content, date, author} = item;
-        const short_content = content.slice(0, 128);
+        const short_content = content.slice(0, 255);
         return {id, title, thumbnail, content: short_content, date, author}
     });
     return view;
