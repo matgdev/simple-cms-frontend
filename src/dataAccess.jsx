@@ -2,10 +2,14 @@ import data from "./mock_data.json"
 
 let sorted = false;
 let nextId = data.length + 1;
+const updateHistory = [];
+let nextUpdateId = 1;
 
 export function getContentById(id){
+    console.log("searching content with id " + id);
     const view = data.filter(d => d.id === id);
     if (view.length === 1) return view[0];
+    console.log("content not found");
     return null;
 }
 
@@ -32,12 +36,12 @@ export function getNumberOfPages(limit){
     return Math.ceil(data.length / limit);
 }
 
-export async function createContent(title, image, content){
+export async function createContent(title, image, content, id=-1){
     const thumb = await makeImg(image, 512, 288);
     const img = await makeImg(image);
     const date = new Date().toISOString();
     const newRow = {
-        "id": nextId,
+        "id": id === -1 ? nextId : Number(id),
         "title": title,
         "content": content,
         "thumbnail": thumb,
@@ -46,8 +50,25 @@ export async function createContent(title, image, content){
         "author": "guest"
     }
     console.log(newRow);
-    data.unshift(newRow);
-    nextId+=1;
+
+    if (newRow.id === nextId){
+        data.unshift(newRow);
+        nextId+=1;
+    }else{
+        const index = data.findIndex(d => Number(d.id) === Number(id));
+        if (index >= 0) {
+            const oldRow = data.splice(index, 1);
+            data.unshift(newRow);
+            oldRow.updateDate = newRow.date;
+            oldRow.updatedId = oldRow.id;
+            oldRow.id = nextUpdateId;
+            oldRow.UpdateType = "edit";
+            updateHistory.push(oldRow);
+            nextUpdateId++;
+            console.log("updated content " + id);
+        }
+    }
+    
 }
 
 async function makeImg(imgFile, w = -1, h = -1){
@@ -89,5 +110,26 @@ async function makeImg(imgFile, w = -1, h = -1){
 
 export async function removeContent(contentId){
     const index = data.findIndex(d => d.id === contentId);
-    if (index >= 0) data.splice(index, 1);
+    if (index >= 0) {
+        const oldRow = data.splice(index, 1);
+        oldRow.updateDate = new Date().toISOString();
+        oldRow.updatedId = oldRow.id;
+        oldRow.id = nextUpdateId;
+        oldRow.UpdateType = "delete";
+        updateHistory.push(oldRow);
+        nextUpdateId++;
+        console.log("removed content " + contentId);
+
+    }
+}
+
+export async function editContent(title, image, content, id){
+    if (!(image instanceof File)){
+        const resp = await fetch(image);
+        const blob = await resp.blob();
+        const mimeType = blob.type || 'image/jpeg';
+        image = new File([blob], "img", { type: mimeType });
+    }
+
+    return await createContent(title, image, content, id);
 }
