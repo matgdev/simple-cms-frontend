@@ -6,6 +6,8 @@ import { useRef } from "react";
 export function Layout(){
     const location = useLocation();
     const ref = useRef(null);
+
+    const showInfo = location.pathname.startsWith("/create") === false;
     
     return(
         <Container ref={ref}>
@@ -16,6 +18,12 @@ export function Layout(){
                     </Container>
                 </Card>
             </Row>
+            {showInfo === true && 
+            <Row>
+                <Card className="bg-warning-subtle text-warning py-2">
+                    Note: This page contains AI-generated content and may include fictional or automatically generated information.
+                </Card>
+            </Row>}
             <Row className="my-2">
                 <Card className="py-1 px-0">
                     <Container>
