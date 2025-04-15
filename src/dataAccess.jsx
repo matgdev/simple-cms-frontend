@@ -22,7 +22,7 @@ export function getContentList(limit = 9, offset = 0){
     const start = offset * limit;
     const view = data.slice(start, start + limit).map((item) => {
         const {id, title, thumbnail, content, date, author} = item;
-        const short_content = content.slice(0, 60);
+        const short_content = content.slice(0, 128);
         return {id, title, thumbnail, content: short_content, date, author}
     });
     return view;
@@ -37,7 +37,7 @@ export function getNumberOfPages(limit){
 }
 
 export async function createContent(title, image, content, id=-1){
-    const thumb = await makeImg(image, 512, 288);
+    const thumb = await makeImg(image, 512, 350);
     const img = await makeImg(image);
     const date = new Date().toISOString();
     const newRow = {
