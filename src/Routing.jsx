@@ -1,4 +1,4 @@
-import { createBrowserRouter, redirect, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, redirect, RouterProvider } from "react-router-dom";
 import { ContentView } from "./ContentView";
 import { createContent, editContent, getContentById, getContentList, getNumberOfPages, isValidId, removeContent } from "./dataAccess";
 import { ContentFeed } from "./ContentFeed";
@@ -7,7 +7,7 @@ import { Layout } from "./Layout";
 import { ManagementMode } from "./ManagementMode";
 import { EditContent } from "./EditContent";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         Component: Layout,
