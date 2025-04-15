@@ -33,12 +33,13 @@ export function ContentFeed({managementMode = false}){
     <>
         <Outlet />
         <Row xs={1} md={3}>
+            {children.length === 0 && <Col className="w-100 text-center mt-3 fs-2">There is no content yet. Create one or check back soon.</Col>}
             <ManagementContext value={managementMode}>
                 {children}
             </ManagementContext>
         </Row>
         <Row className="my-2">
-            <PaginationBar onChange={(n) => handlePageChange(n)} lastPage={maxPageNumber} currentPage={currentPage}></PaginationBar>
+            {children.length > 0 && <PaginationBar onChange={(n) => handlePageChange(n)} lastPage={maxPageNumber} currentPage={currentPage}></PaginationBar>}
         </Row>
     </>);
 }

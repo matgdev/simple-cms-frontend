@@ -96,7 +96,7 @@ async function paginationLoader({request}){
     const page = Number(url.searchParams.get("page")) || 1;
     const maxPageNumber = await getNumberOfPages(limit);
 
-    if (page > maxPageNumber || page < 1){
+    if (maxPageNumber > 0 && (page > maxPageNumber || page < 1)){
         url.searchParams.set("page", page < 1 ? 1 : maxPageNumber);
         return redirect(url.toString());
     } 
