@@ -2,12 +2,15 @@ import Modal from 'react-bootstrap/Modal';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 import { ISOToLocaleDateTimeString as dateToString } from "./DateFormatter";
 import { useLoaderData, useNavigate } from 'react-router-dom';
+import { formatContentBreaks } from './formatContent';
 
 export function ContentView(){
 
     const navigate = useNavigate();
     const {content} = useLoaderData();
     const onHide = () => navigate(-1);
+
+    const textContent = formatContentBreaks(content.content);
 
     return (
         <Modal show={true} onHide={onHide} size='lg'>
@@ -21,7 +24,7 @@ export function ContentView(){
                     </Row>
                     <Row className='mt-4'>
                         <Col>
-                            {content.content}
+                            {textContent}
                         </Col>
                     </Row>
                 </Container>
