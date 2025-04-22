@@ -37,7 +37,7 @@ export function getNumberOfPages(limit) {
 }
 
 export async function createContent(title, image, content, id = -1) {
-    const thumb = await makeImg(image, 512, 350);
+    const thumb = await makeImg(image, 512, 384);
     const img = await makeImg(image);
     const date = new Date().toISOString();
     const newRow = {
