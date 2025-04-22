@@ -10,6 +10,10 @@ A simple frontent project built for learning and practice. This project focuses 
 - Responsive desing for mobile and desktop
 - AI-generated placeholder content
 
+## Live demo
+
+[Simple CMS frontend](https://matgdev.github.io/simple-cms-frontend/)
+
 ## Technologies used
 
 - HTML5 + CSS3
@@ -31,9 +35,15 @@ cd simple-cms-frontend
 ```bash
 npm install
 ```
-### 3. Run the project
+### 3a. Run the project (dev mode)
 ```bash
 npm run dev
+```
+
+### 3b. Build and run the project
+```bash
+npm run build
+npm run preview
 ```
 
 ## Disclaimer
