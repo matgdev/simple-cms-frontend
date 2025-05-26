@@ -28,7 +28,7 @@ A simple frontent project built for learning and practice. This project focuses 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/simple-cms-frontend.git
+git clone https://github.com/matgdev/simple-cms-frontend.git
 cd simple-cms-frontend
 ```
 ### 2. Install dependencies
